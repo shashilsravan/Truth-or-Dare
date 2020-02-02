@@ -1,0 +1,46 @@
+StartGameIntent
+
+let's play truth or dare
+start truth or dare
+let's play
+start game
+
+---------------------
+
+TruthDareIntent
+
+i choose {event}
+{event}
+i will go with {event}
+it's {event}
+i will select {event} 
+
+event means Truth or Dare
+
+------------------------
+
+RestartIntent 
+
+Next round
+Next turn
+
+-----------------------
+
+AddPlayerIntent
+
+add {name}
+add player {name}
+
+-----------------------
+
+RestartGameIntent
+
+let's play again
+restart game
+
+----------------------
+
+AMAZON.HelpIntent
+
+guide me
+help me

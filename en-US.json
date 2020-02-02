@@ -1,0 +1,141 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "t or d",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": [
+                        "got to go",
+                        "good bye",
+                        "bye"
+                    ]
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": [
+                        "guide me",
+                        "what's happening",
+                        "what's this",
+                        "help me"
+                    ]
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": [
+                        "good bye",
+                        "bye",
+                        "got to go"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "StartGameIntent",
+                    "slots": [],
+                    "samples": [
+                        "let's play truth or dare",
+                        "start truth or dare",
+                        "let's play",
+                        "start game"
+                    ]
+                },
+                {
+                    "name": "PlayerCountIntent",
+                    "slots": [
+                        {
+                            "name": "count",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "{count} members are playing",
+                        "{count} members ",
+                        "{count} are playing",
+                        "{count} are going to play",
+                        "{count}",
+                        "{count} are playing the game",
+                        "we are {count}"
+                    ]
+                },
+                {
+                    "name": "AMAZON.RepeatIntent",
+                    "samples": []
+                },
+                {
+                    "name": "TruthDareIntent",
+                    "slots": [
+                        {
+                            "name": "event",
+                            "type": "event"
+                        }
+                    ],
+                    "samples": [
+                        "i choose {event}",
+                        "{event}",
+                        "i will go with {event}",
+                        "it's {event}",
+                        "i will select {event} "
+                    ]
+                },
+                {
+                    "name": "RestartIntent",
+                    "slots": [],
+                    "samples": [
+                        "Next one",
+                        "Next round",
+                        "Next Turn"
+                    ]
+                },
+                {
+                    "name": "AddPlayerIntent",
+                    "slots": [
+                        {
+                            "name": "name",
+                            "type": "AMAZON.FirstName"
+                        }
+                    ],
+                    "samples": [
+                        "add {name}",
+                        "add player {name}"
+                    ]
+                },
+                {
+                    "name": "RestartGameIntent",
+                    "slots": [],
+                    "samples": [
+                        "let's play again",
+                        "restart game"
+                    ]
+                },
+                {
+                    "name": "PlayerNamesIntent",
+                    "slots": [],
+                    "samples": [
+                        "done adding players",
+                        "done"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "event",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "dare"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "truth"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
